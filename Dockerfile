@@ -8,7 +8,7 @@ WORKDIR /var/www/html
 COPY index.html .
 #RUN npm install
 # Copy app files
-COPY . .
+#COPY . .
 # Expose port
 EXPOSE 80
 # Start the app
