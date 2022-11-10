@@ -8,6 +8,6 @@ metadata:
 spec:
   containers:
   - name: myanilpod
-    image: anildevops45/minikube.1
+    image: anildevops45/minikube:1
     ports:
       - containerPort: 80
