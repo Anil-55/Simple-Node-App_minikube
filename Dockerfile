@@ -1,5 +1,5 @@
 #FROM node:14-alpine AS development
-FROM node
+FROM httpd
 #ENV NODE_ENV development
 # Add a work directory
 WORKDIR /var/www/html
