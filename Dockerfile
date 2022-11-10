@@ -5,6 +5,7 @@ FROM node:14-alpine
 WORKDIR /app
 # Cache and Install dependencies
 COPY package.json .
+COPY index.html .
 RUN npm install
 # Copy app files
 COPY . .
