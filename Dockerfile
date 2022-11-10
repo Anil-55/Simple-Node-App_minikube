@@ -2,14 +2,14 @@
 FROM node
 #ENV NODE_ENV development
 # Add a work directory
-WORKDIR /app
+WORKDIR /var/www/html
 # Cache and Install dependencies
-COPY package.json .
+#COPY package.json .
 COPY index.html .
-RUN npm install
+#RUN npm install
 # Copy app files
 COPY . .
 # Expose port
-EXPOSE 3002
+EXPOSE 80
 # Start the app
 CMD [ "node", "app.js" ]
